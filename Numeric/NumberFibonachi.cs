@@ -6,14 +6,14 @@ class Program
     {
         //0, 1, 1, 2, 3, 5, 8, 13, ...
         int number = 10;
-        int a = 0;
-        int b = 1;
+        long a = 0;
+        long b = 1;
 
         System.Console.WriteLine($"a : {a} , b : {b} ,");
 
-        for(int i =3; i<=nummber; i++)
+        for(int i =2; i<number; i++)
         {
-            int c = a + b;
+            long c = a + b;
             System.Console.WriteLine($"c : {c} ,");
             a = b;
             b = c;
