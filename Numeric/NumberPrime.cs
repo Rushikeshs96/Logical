@@ -13,7 +13,7 @@ class Program
             return;
         }
 
-        for (int i = 2; i < number; i++)
+        for (int i = 2; i < number; i++)            // use (int i = 2; i * i <= num; i++)  this loop in interview
         {
             if (number % i == 0)
             {
