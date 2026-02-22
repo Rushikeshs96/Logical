@@ -12,19 +12,35 @@ class Program
             return;
         }
 
+        // int largest = int.MinValue;
+        // int secondLargest = int.MinValue;
+
+        // foreach (int num in arr)
+        // {
+        //     if (num > largest)
+        //     {
+        //         secondLargest = largest;
+        //         largest = num;
+        //     }
+        //     else if (num > secondLargest && num != largest)
+        //     {
+        //         secondLargest = num;
+        //     }
+        // }
+
         int largest = int.MinValue;
         int secondLargest = int.MinValue;
 
-        foreach (int num in arr)
+        for(int i = 0; i < arr.Length; i++)
         {
-            if (num > largest)
+            if (arr[i] > largest)
             {
                 secondLargest = largest;
-                largest = num;
+                largest = arr[i];
             }
-            else if (num > secondLargest && num != largest)
+            else if (arr[i]>secondLargest && arr[i] != largest)
             {
-                secondLargest = num;
+                secondLargest = arr[i];
             }
         }
 
@@ -35,12 +51,12 @@ class Program
 
 
         //using linq
-           int secondLargest = arr
-            .Distinct()
-            .OrderByDescending(x => x)
-            .Skip(1)
-            .First();
+        //    int secondLargest = arr
+        //     .Distinct()
+        //     .OrderByDescending(x => x)
+        //     .Skip(1)
+        //     .First();
 
-        Console.WriteLine(secondLargest);
+        // Console.WriteLine(secondLargest);
     }
 }
