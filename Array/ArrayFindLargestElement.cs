@@ -17,6 +17,14 @@ class Program
         }
         System.Console.WriteLine(max);
 
+        // foreach(var item in arr)
+        // {
+        //     if (item > max)
+        //     {
+        //         max = item;
+        //     }
+        // }
+        // System.Console.WriteLine(max);
 
         //linq
          int largest = arr.Max();
