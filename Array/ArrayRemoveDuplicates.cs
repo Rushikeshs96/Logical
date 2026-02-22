@@ -15,7 +15,7 @@ class Program
 
         // Console.WriteLine(string.Join(" ", result));
 
-        
+
 
         //using preserving order
 
@@ -31,11 +31,21 @@ class Program
         // Console.WriteLine(string.Join(" ", result));
 
 
+        List<int> digits = new List<int>();
+
+        for(int i = 0; i < arr.Length; i++)
+        {
+            if (!digits.Contains(arr[i]))
+            {
+                digits.Add(arr[i]);
+            }
+        }
+        Console.WriteLine(string.Join(" ", digits));
 
         //using linq
 
-        int[] result = arr.Distinct().ToArray();
+        // int[] result = arr.Distinct().ToArray();
 
-        Console.WriteLine(string.Join(" ", result));
+        // Console.WriteLine(string.Join(" ", result));
     }
 }
